@@ -52,7 +52,7 @@
 // unpredictable behavior!
 //----------------------------------------------------------------------
 
-#define N_AXIS 5        // Number of axes (3 to 6)
+#define N_AXIS 3        // Number of axes (3 to 6)
 #define N_AXIS_LINEAR 3 // Number of linears axis, must be <= N_AXIS
 
 // Axis indexing and names
@@ -353,7 +353,7 @@
 //#define INVERT_MIN_LIMIT_PIN_MASK ((1<<AXIS_1) | (1<<AXIS_2) | (1<<AXIS_3))
 // Enable the following line to inverse logical behaviour (Normaly Open / Normaly Closed)
 // of some max limit switches attached.
-//#define INVERT_MAX_LIMIT_PIN_MASK ((1<<AXIS_1) | (1<<AXIS_2) | (1<<AXIS_3))
+#define INVERT_MAX_LIMIT_PIN_MASK (1<<AXIS_3)
 
 // Inverts the spindle enable pin from low-disabled/high-enabled to low-enabled/high-disabled. Useful
 // for some pre-built electronic boards.
